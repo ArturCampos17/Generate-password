@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&display=swap');
+
+*{
+ 
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Rampart One', cursive;
+}
+
+body{
+    background: #37503a;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.title-main{
+    text-align: center;
+    color: #FFFF;
+    font-size: 50px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    max-width: 700px;
+    margin-bottom: 25px; 
+    font-family: 'Lato', sans-serif;
+    font-family: 'Rampart One', cursive;
+    
+
+}
+
+.container-input{
+    max-width: 480px;
+    margin: 14px 0;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container-input span{
+    color: #FFFF;
+    font-size: 22px;
+}
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background: #FFFF;
+    height: 18px;
+    outline: none;
+    margin-top: 8px;
+}
+
+.button{
+    height: 40px;
+    background-color: #28392ab1;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+    color: #FFFF;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container-password{
+    max-width: 580px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+.title{
+    text-align: center;
+    color: #FFFF;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.password{
+    height: 60px;
+    background:rgba(0, 0, 0 0.40);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFF;
+    border: 1px solid #313131;
+    transition: transform 0.5;
+}
+.password:hover{
+    transform: scale(1.05);
+}
+
+.tooltip{
+    color: #FFFF;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background: rgb(15, 15, 15);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.hide{
+    display: none;
+}
+
+.container-password:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
